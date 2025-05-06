@@ -10,7 +10,7 @@ export default function Index() {
   useEffect(() => {
     Voice.onSpeechResults = (e) => {
       setRecognizedText(e.value[0]);
-      // sendToGPT(e.value[0]); // You can call GPT here
+      // sendToGPT(e.value[0]); // You can call GPT here or maye down somewghere
     };
 
     return () => {
